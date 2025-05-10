@@ -1,1 +1,5 @@
-rootProject.name = "demo"
+rootProject.name = "kotlin-spring-boot-sample"
+
+plugins {
+    id("org.gradle.toolchains.foojay-resolver-convention") version "0.9.0"
+}
