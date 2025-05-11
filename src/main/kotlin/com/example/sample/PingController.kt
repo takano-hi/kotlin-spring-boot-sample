@@ -6,7 +6,7 @@ import org.springframework.ui.set
 import org.springframework.web.bind.annotation.GetMapping
 
 @Controller
-class HtmlController {
+class PingController {
     @GetMapping("/")
     fun ping(model: Model): String {
         model["title"] = "pong"
