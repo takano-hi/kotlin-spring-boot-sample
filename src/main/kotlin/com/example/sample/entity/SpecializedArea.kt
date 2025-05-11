@@ -4,11 +4,11 @@ import jakarta.persistence.*
 
 @Entity
 @Table(name = "specialized_areas")
-class SpecializedArea {
+class SpecializedArea (
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
-  var id: Int? = null
+  var id: Int? = null,
 
   @Column(nullable = false)
   var name: String = ""
-}
+)
