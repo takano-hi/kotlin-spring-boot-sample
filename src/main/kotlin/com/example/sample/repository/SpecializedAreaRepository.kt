@@ -9,6 +9,7 @@ interface SpecializedAreaRepository : JpaRepository<SpecializedArea, Int> {
   @Query("""
     SELECT new com.example.sample.dto.SpecializedAreaDto(a.id, a.name)
     FROM SpecializedArea a
+    ORDER BY a.id ASC
   """)
   fun findSpecializedAreas(): List<SpecializedAreaDto>
 }
